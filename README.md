@@ -1,4 +1,4 @@
-# ColorAid Charts - Accessible Data Visualization
+# ColorAid Charts - Design Pattern
 
 A comprehensive web application designed specifically for colorblind users, featuring accessible data visualizations with high contrast colors, pattern-based legends, and inclusive design principles.
 
@@ -8,7 +8,7 @@ https://tayb009.github.io/ColorAid-DesignPattern/
 
 ## Figma Desig Link
 
-https://www.figma.com/design/2yfy1TAYmWP87y3MpUohgs/ColorAid?node-id=0-1&p=f&t=1VEIPLOK4q88RYWw-0
+https://www.figma.com/design/2q3wJG0EUyvlgy0Coa8H6v/ColorAid-DesignPattern?node-id=0-1&t=5Co9dMQ4ojAhXXyS-1
 
 ## Features Implemented
 
