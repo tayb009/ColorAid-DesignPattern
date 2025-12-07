@@ -206,7 +206,7 @@ body {
 }
 
 .download-link {
-    text-align: centre;
+    text-align: center;
 }
 .card-style {
     background: var(--card);
@@ -263,3 +263,4 @@ input, select, textarea { width: 100%; padding: 0.8rem; margin-top: 0.5rem; bord
     .master-detail-container { flex-direction: column; height: auto; }
 
 }
+
