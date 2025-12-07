@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorAid Charts - Visualizations</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <script src="assets/scripts/script.js" defer></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <h1 class="nav-title">ColorAid</h1>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link" data-tooltip="Go to Dashboard">Home</a></li>
+      <li><a href="visualizations.html" class="nav-link" data-tooltip="View Charts">Visualizations</a></li>
+      <li><a href="resources.html" class="nav-link" data-tooltip="Learn More">Resources</a></li>
+      <li><a href="about.html" class="nav-link" data-tooltip="Our Story">About</a></li>
+      <li><a href="contact.html" class="nav-link" data-tooltip="Get in Touch">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-wrapper">
+    <div class="container">
+      <h1 class="page-title">Data Visualizations</h1>
+      <p class="page-subtitle">Select a chart type to view details</p>
+
+      <div class="master-detail-container">
+        
+        <aside class="master-list">
+            <div class="master-item active-item" data-target="chart-tech" data-tooltip="View Bar Chart">Technology Usage (Bar)</div>
+            <div class="master-item" data-target="chart-market" data-tooltip="View Pattern Pie Chart">Market Share (Pattern Pie)</div>
+            <div class="master-item" data-target="chart-device" data-tooltip="View Circle Pie Chart">Device Usage (Circle Pie)</div>
+            <div class="master-item" data-target="chart-age" data-tooltip="View Histogram">Age Distribution (Histogram)</div>
+        </aside>
+
+        <section class="detail-view">
+            
+            <div id="chart-tech" class="chart-panel active-panel">
+                <h3 class="chart-title">Technology Usage Survey</h3>
+                <div class="bar-chart">
+                    <div class="bar-item">
+                        <span class="bar-label">JavaScript</span>
+                        <div class="bar-container" data-tooltip="85% Usage">
+                            <div class="bar bar-primary" style="width: 85%;"></div>
+                            <span class="bar-value">85</span>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label">Python</span>
+                        <div class="bar-container" data-tooltip="72% Usage">
+                            <div class="bar bar-secondary" style="width: 72%;"></div>
+                            <span class="bar-value">72</span>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label">Java</span>
+                        <div class="bar-container" data-tooltip="58% Usage">
+                            <div class="bar bar-tertiary" style="width: 58%;"></div>
+                            <span class="bar-value">58</span>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label">C++</span>
+                        <div class="bar-container" data-tooltip="43% Usage">
+                            <div class="bar bar-accent" style="width: 43%;"></div>
+                            <span class="bar-value">43</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chart-market" class="chart-panel">
+                <h3 class="chart-title">Market Share Distribution</h3>
+                <div class="pie-chart">
+                    <div class="pie-item">
+                        <div class="pie-label"><span>Chrome </span><span>(45.2%)</span></div>
+                        <div class="pie-bar" data-tooltip="Leading Browser">
+                            <div class="pie-fill bar-primary pattern-dots" style="width: 45.2%;"></div>
+                        </div>
+                    </div>
+                    <div class="pie-item">
+                        <div class="pie-label"><span>Firefox </span><span>(28.7%)</span></div>
+                        <div class="pie-bar" data-tooltip="Secondary Browser">
+                            <div class="pie-fill bar-secondary pattern-lines" style="width: 28.7%;"></div>
+                        </div>
+                    </div>
+                    <div class="pie-item">
+                        <div class="pie-label"><span>Safari </span><span>(18.3%)</span></div>
+                        <div class="pie-bar" data-tooltip="Mobile/Mac Browser">
+                            <div class="pie-fill bar-tertiary pattern-grid" style="width: 18.3%;"></div>
+                        </div>
+                    </div>
+                    <div class="pie-item">
+                        <div class="pie-label"><span>Edge </span><span>(7.8%)</span></div>
+                        <div class="pie-bar" data-tooltip="Windows Default">
+                            <div class="pie-fill bar-accent" style="width: 7.8%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chart-device" class="chart-panel">
+                <h3 class="chart-title">Device Usage Breakdown</h3>
+                <div class="circle-pie" 
+                     data-tooltip="Hover legends for details"
+                     style="--p1:40; --p2:30; --p3:20; --p4:10; --c1: var(--primary); --c2: var(--secondary); --c3: var(--tertiary); --c4: var(--accent);">
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item"><div class="legend-marker marker-primary pattern-dots"></div><span>Mobile (40%)</span></div>
+                    <div class="legend-item"><div class="legend-marker marker-secondary pattern-lines"></div><span>Laptop (30%)</span></div>
+                    <div class="legend-item"><div class="legend-marker marker-tertiary pattern-grid"></div><span>Tablet (20%)</span></div>
+                    <div class="legend-item"><div class="legend-marker marker-accent"></div><span>Desktop (10%)</span></div>
+                </div>
+            </div>
+
+            <div id="chart-age" class="chart-panel">
+                <h3 class="chart-title">Age Distribution</h3>
+                <div class="histogram">
+                    <div class="hist-bar bar-primary" style="height: 60%;" data-tooltip="Group 18-24: 60%"></div>
+                    <div class="hist-bar bar-secondary" style="height: 80%;" data-tooltip="Group 25-34: 80%"></div>
+                    <div class="hist-bar bar-tertiary" style="height: 50%;" data-tooltip="Group 35-44: 50%"></div>
+                    <div class="hist-bar bar-accent" style="height: 30%;" data-tooltip="Group 45-54: 30%"></div>
+                </div>
+                <div class="hist-labels">
+                    <span>18-24</span><span>25-34</span><span>35-44</span><span>45-54</span>
+                </div>
+            </div>
+
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

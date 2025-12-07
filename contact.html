@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorAid Charts - Contact</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <script src="assets/scripts/script.js" defer></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <h1 class="nav-title">ColorAid</h1>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link" data-tooltip="Go to Dashboard">Home</a></li>
+      <li><a href="visualizations.html" class="nav-link" data-tooltip="View Charts">Visualizations</a></li>
+      <li><a href="resources.html" class="nav-link" data-tooltip="Learn More">Resources</a></li>
+      <li><a href="about.html" class="nav-link" data-tooltip="Our Story">About</a></li>
+      <li><a href="contact.html" class="nav-link" data-tooltip="Get in Touch">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-wrapper">
+    <div class="container">
+      <h1 class="page-title">Get in Touch</h1>
+      <p class="page-subtitle">We’d love to hear from you</p>
+
+      <form class="contact-form card-style">
+        
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" style="height:40px;">
+        </div>
+
+        <div class="form-group">
+            <label for="range">Satisfaction Level:</label>
+            <input type="range" id="range" name="range" min="0" max="10" data-tooltip="Slide to rate">
+        </div>
+
+        <div class="form-group">
+            <label>
+              <input type="checkbox" name="subscribe" style="width:auto;"> Subscribe to newsletter
+            </label>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" class="styled-btn" data-tooltip="Send your message">Submit</button>
+          <button type="reset" class="styled-btn reset-btn" style="background:#888;" data-tooltip="Clear all fields">Reset</button>
+        </div>
+      </form>
+
+      <p class="download-link">
+        <a href="assets/media/brochure.pdf" download data-tooltip="Download Brochure PDF">📄 Download Brochure</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
