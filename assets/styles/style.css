@@ -204,6 +204,10 @@ body {
 .color-accent {
     background-color: var(--accent);
 }
+
+.download-link {
+    text-align: centre;
+}
 .card-style {
     background: var(--card);
     padding: 2rem;
@@ -257,4 +261,5 @@ input, select, textarea { width: 100%; padding: 0.8rem; margin-top: 0.5rem; bord
     .nav-menu { flex-direction: row; gap: 10px; display: none; } /* Hamburger logic needed for mobile, but simplified here */
     .main-wrapper { margin-left: 0; width: 100%; }
     .master-detail-container { flex-direction: column; height: auto; }
+
 }
